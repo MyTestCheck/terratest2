@@ -53,6 +53,13 @@ variable "databases" {
   }))
 }
 
+# variable "users" {
+#   type = list(object({
+#     name = string
+#     instance = string
+#   }))
+# }
+
 variable "vm_instances" {
   type = list(object({
     name = string
@@ -63,3 +70,4 @@ variable "vm_instances" {
   }))
   default = []
 }
+
